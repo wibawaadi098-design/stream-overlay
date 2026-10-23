@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Stream Overlay</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: transparent;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden;
+        }
+        .overlay-card {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.85), rgba(30, 41, 59, 0.75));
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 2px solid rgba(56, 189, 248, 0.4);
+            border-radius: 50px;
+            padding: 10px 24px 10px 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(56, 189, 248, 0.2);
+            width: fit-content;
+            animation: float 4s ease-in-out infinite, glow 3s ease-in-out infinite;
+        }
+        .icon-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 42px;
+            height: 42px;
+            background: linear-gradient(135deg, #38bdf8, #ec4899);
+            border-radius: 50%;
+            margin-right: 14px;
+            box-shadow: 0 0 12px rgba(236, 72, 153, 0.5);
+        }
+        .icon-box svg {
+            width: 22px;
+            height: 22px;
+            fill: #ffffff;
+            animation: heartbeat 1.5s ease-in-out infinite;
+        }
+        .text-group {
+            display: flex;
+            flex-direction: column;
+        }
+        .main-title {
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+        }
+        .sub-title {
+            color: #38bdf8;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-top: 2px;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-6px); }
+        }
+        @keyframes glow {
+            0%, 100% { border-color: rgba(56, 189, 248, 0.4); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 15px rgba(56, 189, 248, 0.2); }
+            50% { border-color: rgba(236, 72, 153, 0.6); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 25px rgba(236, 72, 153, 0.4); }
+        }
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay-card">
+        <div class="icon-box">
+            <!-- Ikon Animasi Hati/Like -->
+            <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        </div>
+        <div class="text-group">
+            <span class="main-title">Jangan Lupa Follow & Like</span>
+            <span class="sub-title">TikTok LIVE Stream</span>
+        </div>
+    </div>
+</body>
+</html>

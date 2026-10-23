@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stream Overlay - Follow & Like</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: transparent;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden;
+        }
+        .overlay-container {
+            display: flex;
+            align-items: center;
+            background: rgba(15, 23, 42, 0.85); /* Warna dasar gelap transparan yang elegan */
+            border: 2px solid rgba(56, 189, 248, 0.6); /* Garis tepi neon biru/cyan */
+            border-radius: 50px; /* Bentuk lonjong / pill */
+            padding: 8px 22px 8px 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+            width: fit-content;
+            animation: float 3s ease-in-out infinite; /* Efek melayang halus */
+        }
+        .character-img {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #38bdf8;
+            margin-right: 14px;
+            background-color: #1e293b;
+        }
+        .text-content {
+            display: flex;
+            flex-direction: column;
+        }
+        .main-text {
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+        .sub-text {
+            color: #38bdf8;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-4px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay-container">
+        <!-- Ganti 'rimuru.png' dengan nama file gambar karakter kecil Anda -->
+        <img src="rimuru.png" alt="Rimuru" class="character-img">
+        <div class="text-content">
+            <span class="main-text">Jangan Lupa Follow & Like</span>
+            <span class="sub-text">TikTok LIVE Stream</span>
+        </div>
+    </div>
+</body>
+</html>
